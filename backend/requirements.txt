@@ -1,0 +1,33 @@
+# ============================================================
+# requirements.txt — Python Package Dependencies
+#
+# Install all with: pip install -r requirements.txt
+# Railway reads this automatically on every deployment.
+# ============================================================
+
+# Core Django framework
+Django==5.0.6
+
+# Django REST Framework — for building JSON APIs
+djangorestframework==3.15.1
+
+# CORS headers — allows React frontend to call Django API
+django-cors-headers==4.3.1
+
+# Reads .env file for local environment variables
+python-dotenv==1.0.1
+
+# PostgreSQL driver — needed on Railway (production database)
+psycopg2-binary==2.9.9
+
+# Converts Railway's DATABASE_URL into Django database config
+dj-database-url==2.1.0
+
+# Serves Django static files in production without Nginx
+whitenoise==6.6.0
+
+# Production web server — Railway uses this to run Django
+gunicorn==22.0.0
+
+# Image upload support for project thumbnails in Admin
+Pillow==10.3.0

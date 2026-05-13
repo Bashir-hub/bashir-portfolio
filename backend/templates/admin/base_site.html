@@ -1,0 +1,125 @@
+{% extends "admin/base.html" %}
+
+{% block title %}
+{{ title }} | BSI Admin
+{% endblock %}
+
+{% block branding %}
+<div id="site-name">
+    <a href="http://localhost:3000" style="font-family:sans-serif;font-size:1.2rem;font-weight:800;color:#FF5C00;text-decoration:none;">
+        BSI. Admin
+    </a>
+</div>
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+body {
+    background: #0D0D0D !important;
+    color: #dddddd !important;
+    font-family: 'DM Sans', sans-serif !important;
+}
+#header {
+    background: #0A0A0A !important;
+    border-bottom: 1px solid rgba(255,92,0,0.25) !important;
+    padding: 12px 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+#user-tools {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+#user-tools a,
+#user-tools strong {
+    color: #aaaaaa !important;
+    font-size: 0.82rem;
+}
+#user-tools a:hover {
+    color: #FF5C00 !important;
+}
+.module {
+    background: #111111 !important;
+    border: 1px solid rgba(255,255,255,0.07) !important;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+.module h2,
+.module caption,
+.inline-group h2 {
+    background: #1a1a1a !important;
+    color: #FF5C00 !important;
+    border-bottom: 1px solid rgba(255,92,0,0.2) !important;
+    font-weight: 600 !important;
+}
+#result_list tr:hover td {
+    background: rgba(255,92,0,0.05) !important;
+}
+.button,
+input[type="submit"],
+input[type="button"],
+.submit-row input,
+a.button {
+    background: #FF5C00 !important;
+    border: none !important;
+    border-radius: 6px !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    cursor: pointer;
+}
+.button:hover,
+input[type="submit"]:hover,
+a.button:hover {
+    opacity: 0.85 !important;
+}
+div.breadcrumbs {
+    background: #111111 !important;
+    color: #666666 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.05) !important;
+}
+div.breadcrumbs a {
+    color: #FF5C00 !important;
+}
+#nav-sidebar {
+    background: #0D0D0D !important;
+    border-right: 1px solid rgba(255,255,255,0.06) !important;
+}
+.module th a {
+    color: #FF5C00 !important;
+}
+#back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(255,92,0,0.10);
+    border: 1px solid rgba(255,92,0,0.35);
+    color: #FF5C00 !important;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.42rem 1.1rem;
+    border-radius: 20px;
+    text-decoration: none !important;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+#back-btn:hover {
+    background: rgba(255,92,0,0.22) !important;
+}
+</style>
+{% endblock %}
+
+{% block usertools %}
+<a id="back-btn" href="http://localhost:3000" title="Return to portfolio">
+    &#8592; Back to Portfolio
+</a>
+{{ block.super }}
+{% endblock %}
