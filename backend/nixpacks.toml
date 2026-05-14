@@ -1,0 +1,24 @@
+# ============================================================
+# nixpacks.toml — Railway Build Configuration
+#
+# This file tells Railway exactly how to build and start
+# your Django application.
+#
+# [phases.build] → commands that run during the build phase
+# [start]        → command that starts the Django server
+# ============================================================
+
+[phases.build]
+cmds = [
+    # Install all Python packages from requirements.txt
+    "pip install -r requirements.txt",
+    # Collect all static files into staticfiles/ folder
+    "python manage.py collectstatic --noinput",
+    # Apply database migrations automatically on every deploy
+    "python manage.py migrate"
+]
+
+[start]
+# Start the production server with gunicorn
+# $PORT is provided automatically by Railway
+cmd = "gunicorn portfolio.wsgi:application --bind 0.0.0.0:$PORT"
