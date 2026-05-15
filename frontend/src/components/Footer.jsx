@@ -67,8 +67,10 @@ function AdminLoginModal({ onClose }) {
     // Django will show its own login form pre-filled with nothing —
     // but since you run createsuperuser, just log in there directly.
     // Django remembers your session after first login automatically.
-    window.open("http://localhost:8000/admin/", "_blank");
-
+    window.open(
+      "https://bashir-portfolio-production.up.railway.app/admin/",
+      "_blank",
+    );
     // Close the modal after opening admin
     onClose();
   };

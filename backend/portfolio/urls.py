@@ -16,8 +16,7 @@ from django.conf.urls.static import static
 # which resolves to http://localhost:8000/ — a 404 error.
 # This single line changes it to your React frontend URL.
 # When you deploy, change this to your real domain.
-admin.site.site_url = 'http://localhost:3000'
-
+admin.site.site_url = 'https://bashir-portfolio-woad.vercel.app'
 # ── Also customise the Admin panel headings ──────────────────
 # These text labels appear on the Django Admin login and dashboard
 admin.site.site_header = 'Bashir Sani Ibrahim — Admin'
