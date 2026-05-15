@@ -56,8 +56,8 @@ const projectsData = [
     codeUrl: "#",
   },
   {
-    title: "Student Result Management System",
-    desc: "Web system built with Django for managing student academic records, generating PDF reports, and providing analytics for school administrators.",
+    title: "Learning Management System",
+    desc: "Web system built with Django for Addressing the poor student academic performance, generating PDF reports, and providing analytics for school administrators. A research Project Developed for Undergraduate Study",
     tech: ["Django", "Python", "SQLite", "HTML/CSS", "Chart.js"],
     category: "Django",
     emoji: "📊",
