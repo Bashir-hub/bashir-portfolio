@@ -157,3 +157,14 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # ── Misc ──────────────────────────────────────────────────────
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# ── CSRF Trusted Origins ──────────────────────────────────────
+# Tells Django which domains are allowed to make POST requests
+# Required for Django Admin login to work on Railway
+# Add your Railway domain here so admin login works correctly
+
+CSRF_TRUSTED_ORIGINS = os.environ.get(
+    'CSRF_TRUSTED_ORIGINS',
+    'http://localhost:3000,http://localhost:8000'
+).split(',')
