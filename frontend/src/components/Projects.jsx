@@ -64,18 +64,18 @@ const projectsData = [
     bg: "rgba(100,100,255,0.07)",
     imgSrc: null,
     liveUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/Bashir-hub/myLms",
   },
   {
-    title: "Automated Plant Watering System",
-    desc: "Arduino-based IoT device that monitors soil moisture and automatically waters plants. Data is sent to a Django API and visualised on a web dashboard.",
+    title: "Smart Irrigation Digital Twin",
+    desc: "AI Driven System with Arduino-based IoT device that monitors soil moisture and automatically waters plants. Data is sent to a Django API and visualised on a web dashboard.",
     tech: ["Arduino", "C++", "Django", "MQTT", "React"],
     category: "IoT",
     emoji: "🌱",
     bg: "rgba(0,200,100,0.07)",
     imgSrc: null,
     liveUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/Bashir-hub/Smart-Irrigation-DT",
   },
   {
     title: "E-commerce Product Recommender",
@@ -86,7 +86,7 @@ const projectsData = [
     bg: "rgba(255,50,100,0.07)",
     imgSrc: null,
     liveUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/Bashir-hub/bashir-ecommerce",
   },
 ];
 
