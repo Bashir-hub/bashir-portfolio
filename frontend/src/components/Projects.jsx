@@ -31,7 +31,7 @@ const projectsData = [
     bg: "rgba(255,92,0,0.07)",
     imgSrc: null, // Set to '/images/project1.png' when you add your screenshot
     liveUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/Bashir-hub/PlantDiseaseApp",
   },
   {
     title: "Smart Home IoT Dashboard",
