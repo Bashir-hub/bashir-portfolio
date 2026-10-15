@@ -260,9 +260,7 @@ function Projects() {
         <span className="section-tag">Portfolio</span>
         <h2 className="section-title">Featured Projects</h2>
         <p className="section-desc">
-          A selection of real-world projects that showcase my skills across AI,
-          Django, IoT, and mobile development. Replace these with your actual
-          work!
+        A selection of real-world projects that showcase my skills across AI, Django, IoT, and mobile development.
         </p>
       </div>
 

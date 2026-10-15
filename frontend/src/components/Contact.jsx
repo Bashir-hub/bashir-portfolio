@@ -67,7 +67,7 @@ function Contact() {
       // This sends the form data as JSON to your Django contact endpoint
       // Make sure Django is running on port 8000!
       await axios.post(
-        "https://bashir-portfolio-production.up.railway.app/api/contact/",
+        `${process.env.REACT_APP_API_URL}/api/contact/`,
         formData,
         {
           headers: {
