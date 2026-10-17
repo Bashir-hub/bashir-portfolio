@@ -56,22 +56,7 @@ function About() {
     justifyContent: "center",
     gap: "14px",
   };
-
   // Circular initials avatar (like a profile picture placeholder)
-  const avatarStyle = {
-    width: "90px",
-    height: "90px",
-    borderRadius: "50%",
-    background: "linear-gradient(135deg, #FF5C00, #FFB800)",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontFamily: "'Syne', sans-serif",
-    fontSize: "1.7rem",
-    fontWeight: 800,
-    color: "#fff",
-  };
-
   // Orange badge that overlaps the bottom-right corner of the photo
   const badgeStyle = {
     position: "absolute",
